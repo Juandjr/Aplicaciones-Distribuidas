@@ -1,0 +1,23 @@
+{
+  "name": "gestion-sakila",
+  "version": "1.0.0",
+  "description": "Aplicación Sakila con Google OAuth, JWT, CRUD de películas y alquileres.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "create-app-tables": "node src/scripts/create_app_tables.js"
+  },
+  "author": "Juan David Jiménez Romero",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  }
+}

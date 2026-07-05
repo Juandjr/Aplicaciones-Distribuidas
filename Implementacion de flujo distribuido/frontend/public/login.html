@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Sakila</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Iniciar sesión</h1>
+      <p>Accede con Google para entrar al dashboard de películas y alquileres.</p>
+    </header>
+
+    <section class="card">
+      <h2>Autenticación</h2>
+      <p>Usa tu cuenta Google para obtener un JWT y entrar al sistema.</p>
+      <div class="button-row">
+        <button id="login-button">Iniciar sesión con Google</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById('login-button').addEventListener('click', () => {
+      window.location.href = '/auth/google';
+    });
+  </script>
+</body>
+</html>

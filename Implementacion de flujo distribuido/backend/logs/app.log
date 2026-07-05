@@ -1,0 +1,396 @@
+2026-07-05T16:02:50.956Z [info] Server listening on port 3000
+2026-07-05T16:04:59.441Z [info] ::1 - - [05/Jul/2026:16:04:59 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:05:02.543Z [info] ::1 - - [05/Jul/2026:16:05:02 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:06:00.937Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T16:06:00.948Z [info] Login: user=1 role=Customer
+2026-07-05T16:06:00.950Z [info] ::1 - - [05/Jul/2026:16:06:00 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPyrjS9imSIJbixHBfSBjY-UufVyWk_ioBlIGbLfqmKNleBql7mV8RqGK3gS6F4PUQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=consent HTTP/1.1" 302 373 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:06:01.064Z [info] ::1 - - [05/Jul/2026:16:06:01 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:14:43.045Z [info] ::1 - - [05/Jul/2026:16:14:43 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:17:02.064Z [info] ::1 - - [05/Jul/2026:16:17:02 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:18:39.474Z [info] ::1 - - [05/Jul/2026:16:18:39 +0000] "GET /auth/me HTTP/1.1" 404 146 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:18:39.612Z [info] ::1 - - [05/Jul/2026:16:18:39 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T16:20:21.693Z [info] ::1 - - [05/Jul/2026:16:20:21 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:21.719Z [info] ::1 - - [05/Jul/2026:16:20:21 +0000] "GET /auth/me HTTP/1.1" 404 146 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:21.748Z [info] ::1 - - [05/Jul/2026:16:20:21 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:33.089Z [info] Logout: user=1 jti=11d13b38-5228-43d0-b926-790fd671d4f1
+2026-07-05T16:20:33.090Z [info] ::1 - - [05/Jul/2026:16:20:33 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:37.563Z [info] ::1 - - [05/Jul/2026:16:20:37 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:37.621Z [info] ::1 - - [05/Jul/2026:16:20:37 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:39.353Z [info] ::1 - - [05/Jul/2026:16:20:39 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/login.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:40.202Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T16:20:40.204Z [info] Login: user=1 role=Customer
+2026-07-05T16:20:40.205Z [info] ::1 - - [05/Jul/2026:16:20:40 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPxE2UmegRAbSRV0anIz6FunTYIL6t7UxMv_Lq2J9gC-AS2ltpa4CZ7TTHwLeg-COg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 373 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:40.242Z [info] ::1 - - [05/Jul/2026:16:20:40 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:40.255Z [info] ::1 - - [05/Jul/2026:16:20:40 +0000] "GET /auth/me HTTP/1.1" 404 146 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:40.278Z [info] ::1 - - [05/Jul/2026:16:20:40 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:55.834Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:20:55.835Z [info] ::1 - - [05/Jul/2026:16:20:55 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:20:59.968Z [info] ::1 - - [05/Jul/2026:16:20:59 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:00.674Z [info] ::1 - - [05/Jul/2026:16:21:00 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:00.794Z [info] ::1 - - [05/Jul/2026:16:21:00 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:04.533Z [info] ::1 - - [05/Jul/2026:16:21:04 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:04.543Z [info] ::1 - - [05/Jul/2026:16:21:04 +0000] "GET /auth/me HTTP/1.1" 404 146 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:04.563Z [info] ::1 - - [05/Jul/2026:16:21:04 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:04.567Z [info] ::1 - - [05/Jul/2026:16:21:04 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:06.626Z [info] ::1 - - [05/Jul/2026:16:21:06 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:21:07.633Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:21:07.634Z [info] ::1 - - [05/Jul/2026:16:21:07 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:22:40.829Z [info] Server listening on port 3000
+2026-07-05T16:22:45.533Z [info] ::1 - - [05/Jul/2026:16:22:45 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:22:45.561Z [info] ::1 - - [05/Jul/2026:16:22:45 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:22:45.586Z [info] ::1 - - [05/Jul/2026:16:22:45 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:22:48.082Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:22:48.083Z [info] ::1 - - [05/Jul/2026:16:22:48 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:22:58.726Z [info] ::1 - - [05/Jul/2026:16:22:58 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:22:59.494Z [info] ::1 - - [05/Jul/2026:16:22:59 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:20.091Z [info] Rent: film=50 days=1 by 1
+2026-07-05T16:23:20.092Z [info] ::1 - - [05/Jul/2026:16:23:20 +0000] "POST /movies/50/rent HTTP/1.1" 200 25 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:20.097Z [info] ::1 - - [05/Jul/2026:16:23:20 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:24.385Z [error] POST /movies/50/rent - 400 - La película ya está prestada y no puede alquilarse hasta que se devuelva
+2026-07-05T16:23:24.385Z [info] ::1 - - [05/Jul/2026:16:23:24 +0000] "POST /movies/50/rent HTTP/1.1" 400 86 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:27.778Z [info] Return: film=50 rental=4 by 1
+2026-07-05T16:23:27.779Z [info] ::1 - - [05/Jul/2026:16:23:27 +0000] "POST /movies/50/return HTTP/1.1" 200 11 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:27.784Z [info] ::1 - - [05/Jul/2026:16:23:27 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:36.990Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:23:36.990Z [info] ::1 - - [05/Jul/2026:16:23:36 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:40.345Z [info] Rent: film=50 days=1 by 1
+2026-07-05T16:23:40.345Z [info] ::1 - - [05/Jul/2026:16:23:40 +0000] "POST /movies/50/rent HTTP/1.1" 200 25 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:23:40.350Z [info] ::1 - - [05/Jul/2026:16:23:40 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:24:17.146Z [info] ::1 - - [05/Jul/2026:16:24:17 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:24:17.998Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:24:17.999Z [info] ::1 - - [05/Jul/2026:16:24:17 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:30.603Z [info] Server listening on port 3000
+2026-07-05T16:27:35.976Z [info] ::1 - - [05/Jul/2026:16:27:35 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:35.985Z [info] ::1 - - [05/Jul/2026:16:27:35 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:35.995Z [info] ::1 - - [05/Jul/2026:16:27:35 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:36.766Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:27:36.766Z [info] ::1 - - [05/Jul/2026:16:27:36 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:43.093Z [error] POST /movies/50/rent - 400 - La película ya está prestada y no puede alquilarse hasta que se devuelva
+2026-07-05T16:27:43.094Z [info] ::1 - - [05/Jul/2026:16:27:43 +0000] "POST /movies/50/rent HTTP/1.1" 400 86 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:45.427Z [info] Return: film=50 rental=5 by 1
+2026-07-05T16:27:45.427Z [info] ::1 - - [05/Jul/2026:16:27:45 +0000] "POST /movies/50/return HTTP/1.1" 200 11 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:45.434Z [info] ::1 - - [05/Jul/2026:16:27:45 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T16:27:49.158Z [error] GET /movies - 401 - No token provided
+2026-07-05T16:27:49.158Z [info] ::1 - - [05/Jul/2026:16:27:49 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:11.024Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:11.026Z [info] ::1 - - [05/Jul/2026:18:47:11 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:13.187Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:13.188Z [info] ::1 - - [05/Jul/2026:18:47:13 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:22.298Z [info] Server listening on port 3000
+2026-07-05T18:47:22.467Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:22.474Z [info] ::1 - - [05/Jul/2026:18:47:22 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:22.810Z [info] ::ffff:127.0.0.1 - - [05/Jul/2026:18:47:22 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:22.824Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:22.825Z [error] GET /auth/me - 401 - Invalid or expired token
+2026-07-05T18:47:22.827Z [info] ::1 - - [05/Jul/2026:18:47:22 +0000] "GET /auth/me HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:22.844Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:22.845Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T18:47:22.847Z [info] ::1 - - [05/Jul/2026:18:47:22 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:23.706Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:23.707Z [info] ::1 - - [05/Jul/2026:18:47:23 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:24.538Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:24.539Z [info] ::1 - - [05/Jul/2026:18:47:24 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:24.682Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:24.683Z [info] ::1 - - [05/Jul/2026:18:47:24 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:24.841Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:24.842Z [info] ::1 - - [05/Jul/2026:18:47:24 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:24.994Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:24.995Z [info] ::1 - - [05/Jul/2026:18:47:24 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:26.882Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:47:26.882Z [info] ::1 - - [05/Jul/2026:18:47:26 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:27.602Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:27.603Z [info] ::1 - - [05/Jul/2026:18:47:27 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:28.802Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:28.802Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T18:47:28.803Z [info] ::1 - - [05/Jul/2026:18:47:28 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:30.222Z [info] ::1 - - [05/Jul/2026:18:47:30 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:30.228Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:30.228Z [error] GET /auth/me - 401 - Invalid or expired token
+2026-07-05T18:47:30.229Z [info] ::1 - - [05/Jul/2026:18:47:30 +0000] "GET /auth/me HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:30.240Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:30.243Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T18:47:30.246Z [info] ::1 - - [05/Jul/2026:18:47:30 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:31.241Z [info] ::1 - - [05/Jul/2026:18:47:31 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:31.256Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:31.257Z [error] GET /auth/me - 401 - Invalid or expired token
+2026-07-05T18:47:31.258Z [info] ::1 - - [05/Jul/2026:18:47:31 +0000] "GET /auth/me HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:31.279Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:31.279Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T18:47:31.280Z [info] ::1 - - [05/Jul/2026:18:47:31 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:31.286Z [info] ::1 - - [05/Jul/2026:18:47:31 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:37.236Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:37.237Z [error] GET /auth/me - 401 - Invalid or expired token
+2026-07-05T18:47:37.237Z [info] ::1 - - [05/Jul/2026:18:47:37 +0000] "GET /auth/me HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:37.262Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:37.263Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T18:47:37.272Z [info] ::1 - - [05/Jul/2026:18:47:37 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:38.459Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:38.459Z [info] ::1 - - [05/Jul/2026:18:47:38 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:40.077Z [info] ::1 - - [05/Jul/2026:18:47:40 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:48.147Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:48.148Z [info] ::1 - - [05/Jul/2026:18:47:48 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:49.290Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:49.291Z [info] ::1 - - [05/Jul/2026:18:47:49 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:51.265Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:47:51.266Z [info] ::1 - - [05/Jul/2026:18:47:51 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:55.131Z [warn] Auth failure: jwt expired
+2026-07-05T18:47:55.131Z [error] POST /movies/50/rent - 401 - Invalid or expired token
+2026-07-05T18:47:55.132Z [info] ::1 - - [05/Jul/2026:18:47:55 +0000] "POST /movies/50/rent HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:58.098Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:58.098Z [info] ::1 - - [05/Jul/2026:18:47:58 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:58.522Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:58.522Z [info] ::1 - - [05/Jul/2026:18:47:58 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:58.690Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:58.691Z [info] ::1 - - [05/Jul/2026:18:47:58 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:47:58.841Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:47:58.842Z [info] ::1 - - [05/Jul/2026:18:47:58 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:48:21.651Z [info] ::1 - - [05/Jul/2026:18:48:21 +0000] "GET /login HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:48:44.532Z [info] ::1 - - [05/Jul/2026:18:48:44 +0000] "GET /Login HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:49:03.426Z [info] ::1 - - [05/Jul/2026:18:49:03 +0000] "GET /login.ytml HTTP/1.1" 404 149 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:53:38.696Z [info] ::1 - - [05/Jul/2026:18:53:38 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/login.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:53:56.873Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T18:53:56.882Z [info] Login: user=1 role=Admin
+2026-07-05T18:53:56.885Z [info] ::1 - - [05/Jul/2026:18:53:56 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPzuWNvrUkOY4bdx2ZQE1Fvy7NsrXXAQMZ8NOZl6W7xkEQqXSUq36Qu19pVJOO27Cg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=espe.edu.ec&prompt=consent HTTP/1.1" 302 379 "https://accounts.google.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:53:57.229Z [info] ::1 - - [05/Jul/2026:18:53:57 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:53:57.361Z [info] ::1 - - [05/Jul/2026:18:53:57 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:54:38.150Z [info] Logout: user=1 jti=8435986d-7866-4f6e-bcd5-cbd5dfa93374
+2026-07-05T18:54:38.150Z [info] ::1 - - [05/Jul/2026:18:54:38 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:55:02.931Z [info] ::1 - - [05/Jul/2026:18:55:02 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:55:03.676Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T18:55:03.678Z [info] Login: user=1 role=Admin
+2026-07-05T18:55:03.679Z [info] ::1 - - [05/Jul/2026:18:55:03 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPwioL-7YgOOyjzauVAWsPu2rg_v4lS11MkFpPNXGJTi0Lxcb_5rK4cVYsW31ahoNQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:55:03.762Z [info] ::1 - - [05/Jul/2026:18:55:03 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:55:03.772Z [info] ::1 - - [05/Jul/2026:18:55:03 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:14.953Z [info] Logout: user=1 jti=4c6db047-5686-4fdd-98c9-6fe8db80c5eb
+2026-07-05T18:56:14.953Z [info] ::1 - - [05/Jul/2026:18:56:14 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:16.697Z [info] ::1 - - [05/Jul/2026:18:56:16 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:17.428Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T18:56:17.430Z [info] Login: user=1 role=Admin
+2026-07-05T18:56:17.431Z [info] ::1 - - [05/Jul/2026:18:56:17 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPzMYgw6elPWZFQKGK90egzp1f1UXoURgHOTwMtCTFH0gJH6SzZvU_75uLtlzuVN3A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:17.471Z [info] ::1 - - [05/Jul/2026:18:56:17 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:17.484Z [info] ::1 - - [05/Jul/2026:18:56:17 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:18.473Z [info] Logout: user=1 jti=463bdf8d-3412-41a9-a5b5-7c78737ae33c
+2026-07-05T18:56:18.473Z [info] ::1 - - [05/Jul/2026:18:56:18 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:20.437Z [info] ::1 - - [05/Jul/2026:18:56:20 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:20.963Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T18:56:20.965Z [info] Login: user=1 role=Admin
+2026-07-05T18:56:20.966Z [info] ::1 - - [05/Jul/2026:18:56:20 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPy1PvdvlozLwX5UvT_2N7kVh1wpqMo6zCHfwkg3KNXQ1tcIXX2v_gpZ7kAOHxHKwg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:21.010Z [info] ::1 - - [05/Jul/2026:18:56:21 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:21.023Z [info] ::1 - - [05/Jul/2026:18:56:21 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:23.230Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:56:23.231Z [info] ::1 - - [05/Jul/2026:18:56:23 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:24.792Z [info] ::1 - - [05/Jul/2026:18:56:24 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:25.814Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:56:25.814Z [info] ::1 - - [05/Jul/2026:18:56:25 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:27.216Z [info] Logout: user=1 jti=d425776f-4ae3-429a-a178-2d71c99d3f02
+2026-07-05T18:56:27.217Z [info] ::1 - - [05/Jul/2026:18:56:27 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:36.181Z [info] ::1 - - [05/Jul/2026:18:56:36 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:36.894Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T18:56:36.896Z [info] Login: user=1 role=Admin
+2026-07-05T18:56:36.897Z [info] ::1 - - [05/Jul/2026:18:56:36 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPybIuPnr3nfRPEbIYTIjgBYm4ZbaS7GUW60sdtcXOr_ilbAnuJcGSMMHpphxEt50g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:36.943Z [info] ::1 - - [05/Jul/2026:18:56:36 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:56:36.956Z [info] ::1 - - [05/Jul/2026:18:56:36 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:24.284Z [info] Logout: user=1 jti=c0fb7859-f5ed-4de3-b58d-17392dd64feb
+2026-07-05T18:58:24.285Z [info] ::1 - - [05/Jul/2026:18:58:24 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:31.081Z [warn] Auth failure: jwt expired
+2026-07-05T18:58:31.081Z [error] GET /auth/me - 401 - Invalid or expired token
+2026-07-05T18:58:31.082Z [info] ::1 - - [05/Jul/2026:18:58:31 +0000] "GET /auth/me HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:31.235Z [warn] Auth failure: jwt expired
+2026-07-05T18:58:31.236Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T18:58:31.237Z [info] ::1 - - [05/Jul/2026:18:58:31 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:32.426Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:32.426Z [info] ::1 - - [05/Jul/2026:18:58:32 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:34.081Z [info] ::1 - - [05/Jul/2026:18:58:34 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:37.690Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:37.690Z [info] ::1 - - [05/Jul/2026:18:58:37 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:38.579Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:38.580Z [info] ::1 - - [05/Jul/2026:18:58:38 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:38.730Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:38.730Z [info] ::1 - - [05/Jul/2026:18:58:38 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:38.890Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:38.890Z [info] ::1 - - [05/Jul/2026:18:58:38 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:39.042Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:39.042Z [info] ::1 - - [05/Jul/2026:18:58:39 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:39.210Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:39.211Z [info] ::1 - - [05/Jul/2026:18:58:39 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:39.354Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:39.354Z [info] ::1 - - [05/Jul/2026:18:58:39 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:39.522Z [error] GET /movies - 401 - No token provided
+2026-07-05T18:58:39.522Z [info] ::1 - - [05/Jul/2026:18:58:39 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:40.169Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:40.170Z [info] ::1 - - [05/Jul/2026:18:58:40 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:40.338Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:40.338Z [info] ::1 - - [05/Jul/2026:18:58:40 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:40.505Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:40.506Z [info] ::1 - - [05/Jul/2026:18:58:40 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:40.666Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:40.666Z [info] ::1 - - [05/Jul/2026:18:58:40 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:40.818Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:40.818Z [info] ::1 - - [05/Jul/2026:18:58:40 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:40.962Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:40.962Z [info] ::1 - - [05/Jul/2026:18:58:40 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:52.266Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:52.266Z [info] ::1 - - [05/Jul/2026:18:58:52 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:58:52.889Z [error] POST /auth/logout - 500 - jwt expired
+2026-07-05T18:58:52.890Z [info] ::1 - - [05/Jul/2026:18:58:52 +0000] "POST /auth/logout HTTP/1.1" 500 23 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:12.095Z [info] ::1 - - [05/Jul/2026:18:59:12 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:15.185Z [info] ::1 - - [05/Jul/2026:18:59:15 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:16.164Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T18:59:16.166Z [info] Login: user=1 role=Admin
+2026-07-05T18:59:16.167Z [info] ::1 - - [05/Jul/2026:18:59:16 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPwGOYEc1qD0Z3uH1NvcLTukSMg3dZRFUoI6VbTaY0v7Ar1CGMCLboDwv4PXIeCyDg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:16.208Z [info] ::1 - - [05/Jul/2026:18:59:16 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:16.221Z [info] ::1 - - [05/Jul/2026:18:59:16 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:16.253Z [info] ::1 - - [05/Jul/2026:18:59:16 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T18:59:18.064Z [info] Logout: user=1 jti=0aa0637e-1c2e-4b7b-a101-7faafc8de035
+2026-07-05T18:59:18.064Z [info] ::1 - - [05/Jul/2026:18:59:18 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:01:35.047Z [info] ::1 - - [05/Jul/2026:19:01:35 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:01:35.767Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:01:35.770Z [info] Login: user=1 role=Admin
+2026-07-05T19:01:35.771Z [info] ::1 - - [05/Jul/2026:19:01:35 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPyn7YPFDK21vPi8vqYD4QOIcZWwx4ieD4zr6Au7Cw6V6rMWLOEqxURR7WGT5jfagw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:01:35.817Z [info] ::1 - - [05/Jul/2026:19:01:35 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:01:35.827Z [info] ::1 - - [05/Jul/2026:19:01:35 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:01:59.005Z [info] ::1 - - [05/Jul/2026:19:01:59 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:01:59.009Z [info] ::1 - - [05/Jul/2026:19:01:59 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:00.007Z [info] ::1 - - [05/Jul/2026:19:02:00 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:00.033Z [info] ::1 - - [05/Jul/2026:19:02:00 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:00.776Z [info] ::1 - - [05/Jul/2026:19:02:00 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:00.789Z [info] ::1 - - [05/Jul/2026:19:02:00 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:20.388Z [info] ::1 - - [05/Jul/2026:19:02:20 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:20.402Z [info] ::1 - - [05/Jul/2026:19:02:20 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:21.668Z [info] Logout: user=1 jti=5f63024c-adcc-4995-a2a1-de48c0ff285f
+2026-07-05T19:02:21.668Z [info] ::1 - - [05/Jul/2026:19:02:21 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:28.976Z [info] ::1 - - [05/Jul/2026:19:02:28 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:29.773Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:02:29.778Z [info] Login: user=2 role=Admin
+2026-07-05T19:02:29.779Z [info] ::1 - - [05/Jul/2026:19:02:29 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPwbIq9VVj0USgqKdVz1aBBUUfkCZsetD9YqouknWVrAlBANoY_TPZiRg4WHVgVbYA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:29.821Z [info] ::1 - - [05/Jul/2026:19:02:29 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:29.829Z [info] ::1 - - [05/Jul/2026:19:02:29 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:31.371Z [info] Logout: user=2 jti=20cf587b-d35d-4ada-8656-77786c20e6de
+2026-07-05T19:02:31.372Z [info] ::1 - - [05/Jul/2026:19:02:31 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:49.896Z [info] ::1 - - [05/Jul/2026:19:02:49 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/login.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:50.582Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:02:50.586Z [info] Login: user=3 role=Admin
+2026-07-05T19:02:50.587Z [info] ::1 - - [05/Jul/2026:19:02:50 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPyxs3fFuJIdIfXD6TYEmpm-U2OscFSk1GhHCWDnCPBinppCPRSrYj5riP1VNiGg1w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:50.635Z [info] ::1 - - [05/Jul/2026:19:02:50 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:02:50.649Z [info] ::1 - - [05/Jul/2026:19:02:50 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:03:26.899Z [info] Logout: user=3 jti=b49bb9c6-4759-40f8-8853-400a5f2d92e1
+2026-07-05T19:03:26.900Z [info] ::1 - - [05/Jul/2026:19:03:26 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:03:33.623Z [info] ::1 - - [05/Jul/2026:19:03:33 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:03:34.312Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:03:34.321Z [info] Login: user=3 role=Admin
+2026-07-05T19:03:34.322Z [info] ::1 - - [05/Jul/2026:19:03:34 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPwU6Ca2_uBMSEo1NEylSY3SZEod_m99kW_BrZm2yA-iIgHtx1CEfdM64nI02p95ZA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:03:34.366Z [info] ::1 - - [05/Jul/2026:19:03:34 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:03:34.372Z [info] ::1 - - [05/Jul/2026:19:03:34 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:04:46.084Z [info] ::1 - - [05/Jul/2026:19:04:46 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/login.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:04:46.795Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:04:46.799Z [info] Login: user=4 role=Admin
+2026-07-05T19:04:46.800Z [info] ::1 - - [05/Jul/2026:19:04:46 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPxezZDpK8DV4Nvj2MrAQVzJWwNrJ5TdzE4Qi_gdgRkg1JYIy8wr1htfnWZ8RaajAQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:04:46.843Z [info] ::1 - - [05/Jul/2026:19:04:46 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:04:46.853Z [info] ::1 - - [05/Jul/2026:19:04:46 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:07:12.282Z [info] ::1 - - [05/Jul/2026:19:07:12 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/login.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T19:07:26.602Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:07:26.605Z [info] Login: user=4 role=Admin
+2026-07-05T19:07:26.605Z [info] ::1 - - [05/Jul/2026:19:07:26 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPxI7uTw8fYF3Ve7P-2QhT58efT0b1a_QCGU_JEsZWv-xSPMs0pBPS53-z296uBL6A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=consent HTTP/1.1" 302 379 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T19:07:26.747Z [info] ::1 - - [05/Jul/2026:19:07:26 +0000] "GET /auth/me HTTP/1.1" 200 108 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T19:07:26.918Z [info] ::1 - - [05/Jul/2026:19:07:26 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T19:07:32.263Z [info] Logout: user=4 jti=65e6642a-bed8-46c3-8b80-634156ea4ea5
+2026-07-05T19:07:32.263Z [info] ::1 - - [05/Jul/2026:19:07:32 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.126.0 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36"
+2026-07-05T19:09:39.833Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:09:39.834Z [info] ::1 - - [05/Jul/2026:19:09:39 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:04.733Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:04.733Z [info] ::1 - - [05/Jul/2026:19:11:04 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:09.067Z [info] Rent: film=50 days=1 by 4
+2026-07-05T19:11:09.067Z [info] ::1 - - [05/Jul/2026:19:11:09 +0000] "POST /movies/50/rent HTTP/1.1" 200 25 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:09.071Z [info] ::1 - - [05/Jul/2026:19:11:09 +0000] "GET /movies HTTP/1.1" 200 6266 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:13.708Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:13.709Z [info] ::1 - - [05/Jul/2026:19:11:13 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:19.807Z [error] POST /movies/50/rent - 400 - La película ya está prestada y no puede alquilarse hasta que se devuelva
+2026-07-05T19:11:19.808Z [info] ::1 - - [05/Jul/2026:19:11:19 +0000] "POST /movies/50/rent HTTP/1.1" 400 86 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:28.097Z [info] Deactivate movie:2 by 4
+2026-07-05T19:11:28.097Z [info] ::1 - - [05/Jul/2026:19:11:28 +0000] "DELETE /movies/2 HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:28.101Z [info] ::1 - - [05/Jul/2026:19:11:28 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:32.812Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:32.813Z [info] ::1 - - [05/Jul/2026:19:11:32 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:33.316Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:33.317Z [info] ::1 - - [05/Jul/2026:19:11:33 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:33.492Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:33.493Z [info] ::1 - - [05/Jul/2026:19:11:33 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:33.636Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:33.636Z [info] ::1 - - [05/Jul/2026:19:11:33 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:33.804Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:33.805Z [info] ::1 - - [05/Jul/2026:19:11:33 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:33.948Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:33.949Z [info] ::1 - - [05/Jul/2026:19:11:33 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:34.108Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:34.109Z [info] ::1 - - [05/Jul/2026:19:11:34 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:34.260Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:34.261Z [info] ::1 - - [05/Jul/2026:19:11:34 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:48.289Z [info] Return: film=50 rental=6 by 4
+2026-07-05T19:11:48.289Z [info] ::1 - - [05/Jul/2026:19:11:48 +0000] "POST /movies/50/return HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:48.294Z [info] ::1 - - [05/Jul/2026:19:11:48 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:11:54.997Z [error] GET /movies - 401 - No token provided
+2026-07-05T19:11:54.997Z [info] ::1 - - [05/Jul/2026:19:11:54 +0000] "GET /movies HTTP/1.1" 401 29 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:23:22.620Z [info] ::1 - - [05/Jul/2026:19:23:22 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:28:52.661Z [info] Rent: film=50 days=1 by 4
+2026-07-05T19:28:52.663Z [info] ::1 - - [05/Jul/2026:19:28:52 +0000] "POST /movies/50/rent HTTP/1.1" 200 25 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:28:52.666Z [info] ::1 - - [05/Jul/2026:19:28:52 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:04.031Z [error] POST /movies/50/rent - 400 - La película ya está prestada y no puede alquilarse hasta que se devuelva
+2026-07-05T19:31:04.031Z [info] ::1 - - [05/Jul/2026:19:31:04 +0000] "POST /movies/50/rent HTTP/1.1" 400 86 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:08.751Z [info] Return: film=50 rental=7 by 4
+2026-07-05T19:31:08.752Z [info] ::1 - - [05/Jul/2026:19:31:08 +0000] "POST /movies/50/return HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:08.756Z [info] ::1 - - [05/Jul/2026:19:31:08 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:12.864Z [info] Rent: film=50 days=1 by 4
+2026-07-05T19:31:12.865Z [info] ::1 - - [05/Jul/2026:19:31:12 +0000] "POST /movies/50/rent HTTP/1.1" 200 25 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:12.870Z [info] ::1 - - [05/Jul/2026:19:31:12 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:17.440Z [info] Return: film=50 rental=8 by 4
+2026-07-05T19:31:17.440Z [info] ::1 - - [05/Jul/2026:19:31:17 +0000] "POST /movies/50/return HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:17.445Z [info] ::1 - - [05/Jul/2026:19:31:17 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:21.845Z [info] Rent: film=50 days=1 by 4
+2026-07-05T19:31:21.846Z [info] ::1 - - [05/Jul/2026:19:31:21 +0000] "POST /movies/50/rent HTTP/1.1" 200 25 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:31:21.850Z [info] ::1 - - [05/Jul/2026:19:31:21 +0000] "GET /movies HTTP/1.1" 200 6056 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:33:21.506Z [error] POST /movies/50/rent - 400 - La película ya está prestada y no puede alquilarse hasta que se devuelva
+2026-07-05T19:33:21.506Z [info] ::1 - - [05/Jul/2026:19:33:21 +0000] "POST /movies/50/rent HTTP/1.1" 400 86 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:35:04.307Z [info] Logout: user=4 jti=42d2bde3-53b1-4334-a392-11a505a91d24
+2026-07-05T19:35:04.307Z [info] ::1 - - [05/Jul/2026:19:35:04 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:37.109Z [info] ::1 - - [05/Jul/2026:19:37:37 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:37.853Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:37:37.855Z [info] Login: user=4 role=Admin
+2026-07-05T19:37:37.856Z [info] ::1 - - [05/Jul/2026:19:37:37 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPy3Q34ZJhp-YkImpKUSZry6UaFSpH7_NT67XhULn5lEIRJRxyIODOfhyTQLzFye3A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:37.898Z [info] ::1 - - [05/Jul/2026:19:37:37 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:37.912Z [info] ::1 - - [05/Jul/2026:19:37:37 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:39.302Z [info] Logout: user=4 jti=7e2ef026-393c-4e64-bdbd-fac5fa0cd41d
+2026-07-05T19:37:39.302Z [info] ::1 - - [05/Jul/2026:19:37:39 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:39.883Z [info] ::1 - - [05/Jul/2026:19:37:39 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:40.403Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:37:40.405Z [info] Login: user=4 role=Admin
+2026-07-05T19:37:40.405Z [info] ::1 - - [05/Jul/2026:19:37:40 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPz-DaeZUgV-z5W8pT0cRTjZIjX_Vdv2uB2p0UdiKPJesQGXU6ar-XRtg4YMClAeEw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:40.449Z [info] ::1 - - [05/Jul/2026:19:37:40 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:40.463Z [info] ::1 - - [05/Jul/2026:19:37:40 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:41.334Z [info] Logout: user=4 jti=b3e33714-3352-497e-848f-528ab815d641
+2026-07-05T19:37:41.335Z [info] ::1 - - [05/Jul/2026:19:37:41 +0000] "POST /auth/logout HTTP/1.1" 200 11 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:41.730Z [info] ::1 - - [05/Jul/2026:19:37:41 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:42.216Z [info] Google auth succeeded for user 100175578365794524466
+2026-07-05T19:37:42.218Z [info] Login: user=4 role=Admin
+2026-07-05T19:37:42.219Z [info] ::1 - - [05/Jul/2026:19:37:42 +0000] "GET /auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0AdkVLPwPEeK72MmDfQzZktKjbwdOCts5yY8i3Hnlvg2F53YXFeJVd41FiFwQbIdh7YSbYA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=espe.edu.ec&prompt=none HTTP/1.1" 302 379 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:42.258Z [info] ::1 - - [05/Jul/2026:19:37:42 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T19:37:42.268Z [info] ::1 - - [05/Jul/2026:19:37:42 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:24:12.458Z [info] ::1 - - [05/Jul/2026:20:24:12 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:24:13.055Z [info] ::1 - - [05/Jul/2026:20:24:13 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:24:16.416Z [info] ::1 - - [05/Jul/2026:20:24:16 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:27:13.629Z [info] Server listening on port 3000
+2026-07-05T20:27:20.095Z [info] ::1 - - [05/Jul/2026:20:27:20 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:27:20.127Z [info] ::1 - - [05/Jul/2026:20:27:20 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:27:20.144Z [info] ::1 - - [05/Jul/2026:20:27:20 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:28.935Z [info] ::1 - - [05/Jul/2026:20:33:28 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:29.463Z [info] ::1 - - [05/Jul/2026:20:33:29 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:29.619Z [info] ::1 - - [05/Jul/2026:20:33:29 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:29.767Z [info] ::1 - - [05/Jul/2026:20:33:29 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:29.915Z [info] ::1 - - [05/Jul/2026:20:33:29 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:30.059Z [info] ::1 - - [05/Jul/2026:20:33:30 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:33:30.221Z [info] ::1 - - [05/Jul/2026:20:33:30 +0000] "GET /movies HTTP/1.1" 304 - "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:42:28.107Z [warn] Auth failure: jwt expired
+2026-07-05T20:42:28.107Z [error] GET /movies - 401 - Invalid or expired token
+2026-07-05T20:42:28.108Z [info] ::1 - - [05/Jul/2026:20:42:28 +0000] "GET /movies HTTP/1.1" 401 36 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+2026-07-05T20:42:39.364Z [warn] Auth failure: jwt expired
+2026-07-05T20:42:39.364Z [error] POST /movies/50/rent - 401 - Invalid or expired token
+2026-07-05T20:42:39.365Z [info] ::1 - - [05/Jul/2026:20:42:39 +0000] "POST /movies/50/rent HTTP/1.1" 401 36 "http://localhost:3000/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
