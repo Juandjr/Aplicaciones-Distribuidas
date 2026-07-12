@@ -1,0 +1,104 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: min(760px, 92%);
+  margin: 40px auto;
+}
+
+.hero,
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin-top: 4px;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input {
+  border: 1px solid #9ca3af;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: #1f2937;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.message,
+.result {
+  min-height: 24px;
+  margin-bottom: 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+  white-space: pre-wrap;
+}
+
+.message:empty,
+.result:empty {
+  display: none;
+}
+
+.qr-container {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.qr-image {
+  width: 220px;
+  max-width: 100%;
+  display: block;
+  margin: 14px auto;
+}

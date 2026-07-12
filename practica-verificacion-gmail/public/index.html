@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activación de cuenta</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">Aplicaciones Distribuidas</p>
+      <h1>Activación de cuenta por correo</h1>
+      <p>
+        Registre una cuenta, revise el código recibido y active el usuario.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>1. Registrar cuenta</h2>
+      <form id="registerForm">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="registerEmail">Correo electrónico</label>
+        <input id="registerEmail" name="email" type="email" required>
+
+        
+        <label for="registerPassword">Contraseña</label>
+          <input
+            id="registerPassword"
+            name="password"
+            type="password"
+            minlength="6"
+            required
+          >
+
+
+        <button type="submit">Registrar y enviar código</button>
+      </form>
+      <p id="registerMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>2. Verificar código</h2>
+      <form id="verifyForm">
+        <label for="verifyEmail">Correo registrado</label>
+        <input id="verifyEmail" name="email" type="email" required>
+
+        <label for="code">Código de seis dígitos</label>
+        <input
+          id="code"
+          name="code"
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9]{6}"
+          maxlength="6"
+          required
+        >
+
+        <button type="submit">Activar cuenta</button>
+        <button id="resendButton" class="secondary" type="button">
+          Reenviar código
+        </button>
+      </form>
+      <p id="verifyMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>3. Consultar estado</h2>
+      <form id="statusForm">
+        <label for="statusEmail">Correo registrado</label>
+        <input id="statusEmail" name="email" type="email" required>
+        <button type="submit">Consultar estado</button>
+      </form>
+      <pre id="statusResult" class="result" aria-live="polite"></pre>
+    </section>
+
+<section class="card card-accent">
+      <p class="eyebrow">Segunda parte</p>
+      <h2>4. Enviar un mensaje dinámico</h2>
+      <p class="description">
+        Escriba el destinatario y el contenido. La API transformará los datos
+        en una tarjeta HTML y Gmail entregará el correo.
+      </p>
+
+      <form id="notificationForm">
+        <label for="notificationEmail">Correo destinatario</label>
+        <input
+          id="notificationEmail"
+          name="to"
+          type="email"
+          placeholder="destinatario@correo.com"
+          required
+        >
+
+        <label for="notificationSubject">Asunto del correo</label>
+        <input
+          id="notificationSubject"
+          name="subject"
+          type="text"
+          maxlength="120"
+          placeholder="Aviso académico"
+          required
+        >
+
+        <label for="notificationTitle">Título de la tarjeta</label>
+        <input
+          id="notificationTitle"
+          name="title"
+          type="text"
+          maxlength="100"
+          placeholder="Nueva actividad disponible"
+          required
+        >
+
+        <label for="notificationMessage">Mensaje</label>
+        <textarea
+          id="notificationMessage"
+          name="message"
+          rows="7"
+          maxlength="3000"
+          placeholder="Escriba aquí el mensaje que aparecerá dentro de la tarjeta..."
+          required
+        ></textarea>
+
+        <label for="notificationSignature">Firma</label>
+        <input
+          id="notificationSignature"
+          name="signature"
+          type="text"
+          maxlength="80"
+          value="Aplicaciones Distribuidas"
+        >
+
+        <button type="submit">Enviar correo dinámico</button>
+      </form>
+
+      <p id="notificationMessageResult" class="message" aria-live="polite"></p>
+    </section>
+
+
+<section class="card card-accent">
+  <p class="eyebrow">Parte 2.5</p>
+  <h2>Activar autenticación en dos pasos</h2>
+
+  <p class="description">
+    Ingrese el correo de una cuenta activa. El sistema generará un código QR
+    para registrar la cuenta en Microsoft Authenticator o Google Authenticator.
+  </p>
+
+  <form id="mfaSetupForm">
+    <label for="mfaSetupEmail">Correo activo</label>
+    <input id="mfaSetupEmail" type="email" required>
+    <button type="submit">Generar QR de autenticador</button>
+  </form>
+
+  <div id="mfaQrContainer" class="qr-container" hidden>
+    <p>Escanee este QR con Microsoft Authenticator o Google Authenticator.</p>
+    <img id="mfaQrImage" class="qr-image" alt="Código QR MFA">
+    <p>Clave manual:</p>
+    <pre id="mfaManualKey" class="result"></pre>
+  </div>
+
+  <form id="mfaConfirmForm">
+    <label for="mfaConfirmEmail">Correo</label>
+    <input id="mfaConfirmEmail" type="email" required>
+
+    <label for="mfaConfirmCode">Código del autenticador</label>
+    <input
+      id="mfaConfirmCode"
+      type="text"
+      inputmode="numeric"
+      maxlength="6"
+      pattern="[0-9]{6}"
+      required
+    >
+
+    <button type="submit">Confirmar y activar 2FA</button>
+  </form>
+
+  <p id="mfaSetupMessage" class="message" aria-live="polite"></p>
+</section>
+
+
+<section class="card">
+  <h2>Iniciar sesión con segundo factor</h2>
+
+  <form id="mfaLoginForm">
+    <label for="loginEmail">Correo</label>
+    <input id="loginEmail" type="email" required>
+
+    <label for="loginPassword">Contraseña</label>
+    <input id="loginPassword" type="password" required>
+
+    <button type="submit">Validar correo y contraseña</button>
+  </form>
+
+  <div id="mfaLoginChallenge" hidden>
+    <form id="mfaLoginVerifyForm">
+      <label for="loginMfaEmail">Correo</label>
+      <input id="loginMfaEmail" type="email" required>
+
+      <label for="loginMfaCode">Código del autenticador</label>
+      <input
+        id="loginMfaCode"
+        type="text"
+        inputmode="numeric"
+        maxlength="6"
+        pattern="[0-9]{6}"
+        required
+      >
+
+      <button type="submit">Completar inicio de sesión</button>
+    </form>
+  </div>
+
+  <p id="mfaLoginMessage" class="message" aria-live="polite"></p>
+</section>
+
+
+  </main>
+
+  <main class="container" style="margin-top: 2rem;">
+    <header class="hero">
+      <p class="eyebrow">Parte 3</p>
+      <h1>Nuevas Funcionalidades del Proyecto</h1>
+      <p>Recuperación de cuenta con token, Cola interna con Worker y archivos adjuntos.</p>
+    </header>
+
+    <!-- 5. Recuperación de cuenta mediante token -->
+    <section class="card card-accent">
+      <p class="eyebrow">Punto 5</p>
+      <h2>5. Recuperar Cuenta por Token</h2>
+      <p class="description">
+        Solicite la recuperación. La API generará un token temporal y encolará el envío de un correo con un botón de enlace.
+      </p>
+      <form id="recoveryForm">
+        <label for="recoveryEmail">Correo registrado (activo)</label>
+        <input id="recoveryEmail" type="email" placeholder="usuario@correo.com" required>
+        <button type="submit">Enviar enlace de recuperación</button>
+      </form>
+      <p id="recoveryMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <!-- 6 & 7. Cola interna y Worker -->
+    <section class="card">
+      <p class="eyebrow">Puntos 6 y 7</p>
+      <h2>6 y 7. Cola Interna y Estado del Worker</h2>
+      <p class="description">
+        Muestra las tareas registradas en la cola interna y permite pausar o reanudar el procesamiento del Worker.
+      </p>
+      <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+        <button id="btnPauseWorker" style="background-color: #ef4444; flex: 1;">Pausar Worker</button>
+        <button id="btnResumeWorker" style="background-color: #10b981; flex: 1;">Reanudar Worker</button>
+        <button id="btnRefreshQueue" class="secondary" style="flex: 0.5;">🔄</button>
+      </div>
+      <div>
+        <p><strong>Estado del Worker:</strong> <span id="workerStatusText">Cargando...</span></p>
+      </div>
+      
+      <h3>Tareas en la cola</h3>
+      <div style="overflow-x: auto; margin-top: 10px;">
+        <table id="queueTable" style="width: 100%; border-collapse: collapse; font-size: 0.9em; text-align: left;">
+          <thead>
+            <tr style="border-bottom: 2px solid #cbd5e1; background: #f8fafc;">
+              <th style="padding: 8px;">ID / Tipo</th>
+              <th style="padding: 8px;">Destinatario</th>
+              <th style="padding: 8px;">Estado</th>
+              <th style="padding: 8px;">Intentos</th>
+              <th style="padding: 8px;">Error</th>
+            </tr>
+          </thead>
+          <tbody id="queueTableBody">
+            <tr>
+              <td colspan="5" style="text-align: center; padding: 15px;">No hay tareas registradas o cargando...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 8. Envío de correos con archivos adjuntos -->
+    <section class="card card-accent">
+      <p class="eyebrow">Punto 8</p>
+      <h2>8. Enviar Correo con Archivo Adjunto (Máx. 20 MB)</h2>
+      <p class="description">
+        Seleccione un archivo (PDF, DOCX, PNG, JPG, XLSX). El navegador enviará multipart/form-data y la API lo validará antes de encolarlo.
+      </p>
+      <form id="attachmentForm" enctype="multipart/form-data">
+        <label for="attachEmail">Correo destinatario</label>
+        <input id="attachEmail" type="email" required placeholder="destinatario@correo.com">
+
+        <label for="attachSubject">Asunto</label>
+        <input id="attachSubject" type="text" required placeholder="Ej: Factura o Reporte mensual">
+
+        <label for="attachTitle">Título del correo</label>
+        <input id="attachTitle" type="text" required placeholder="Ej: Documentación adjunta">
+
+        <label for="attachMessage">Mensaje</label>
+        <textarea id="attachMessage" rows="4" required placeholder="Escriba el cuerpo del mensaje..."></textarea>
+
+        <label for="attachFile">Archivo adjunto (Máx 20 MB. Extensiones: PDF, DOCX, PNG, JPG, XLSX)</label>
+        <input id="attachFile" type="file" required>
+
+        <button type="submit">Enviar con archivo adjunto</button>
+      </form>
+      <p id="attachmentMessageResult" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
